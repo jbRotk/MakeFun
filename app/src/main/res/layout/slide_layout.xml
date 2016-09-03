@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/slide_top_pic"
+            android:background="@drawable/slide_top_pic"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <com.example.administrator.makefun.view.widget.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:border_width="0dp"
+            app:border_color="@color/colorPrimaryDark"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/slide_head_pic"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welecome Back!"
+            android:id="@+id/welecometext"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/TextColor"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ag.y"
+            android:id="@+id/user_name"
+            android:textColor="@color/TextColor"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Slide_item_high"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/YaoWen">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageView2"
+                android:src="@android:drawable/btn_star_big_on"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/YaoWen"
+                android:id="@+id/YaoWen_text"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/Slide_icon_text_distance"
+                android:textSize="@dimen/Slide_item_Size"
+                android:textColor="@color/Slide_item_textColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Slide_item_high"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/TuKu">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageView3"
+                android:src="@android:drawable/btn_star_big_on"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/TuKu"
+                android:id="@+id/TuKu_text"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/Slide_icon_text_distance"
+                android:textSize="@dimen/Slide_item_Size"
+                android:textColor="@color/Slide_item_textColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Slide_item_high"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/CePing">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageView4"
+                android:src="@android:drawable/btn_star_big_on"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CePing"
+                android:id="@+id/CePing_text"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/Slide_icon_text_distance"
+                android:textSize="@dimen/Slide_item_Size"
+                android:textColor="@color/Slide_item_textColor" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#333333"
+        android:layout_marginTop="8dp"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Setting_item_high"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:id="@+id/Setting">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView5"
+            android:src="@android:drawable/btn_star_big_on"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Setting"
+            android:id="@+id/Shezhi_text"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/Slide_icon_text_distance"
+            android:textSize="@dimen/Slide_item_Size"
+            android:textColor="@color/Slide_item_textColor" />
+    </LinearLayout>
+</LinearLayout>

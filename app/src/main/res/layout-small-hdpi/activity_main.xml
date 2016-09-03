@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.activity.MainActivity"
+    android:elevation="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Topbar_hight"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:layout_width="@dimen/tubiao_Size"
+                android:layout_height="@dimen/tubiao_Size"
+                android:id="@+id/SlidebarToggle"
+                android:src="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MakeFun"
+                android:id="@+id/title"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/SlidebarToggle"
+                android:layout_toEndOf="@+id/SlidebarToggle"
+                android:textColor="@color/TextColor"
+                android:textSize="@dimen/LargerSize"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp" />
+        </RelativeLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Topbar_hight"
+            app:tabIndicatorColor="@color/TextColor"
+            app:tabSelectedTextColor="@color/TextColor"
+            app:tabTextColor="@color/TextColor"
+            android:background="@color/colorPrimary"
+            android:elevation="8sp">
+        </android.support.design.widget.TabLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+    </LinearLayout>
+</RelativeLayout>

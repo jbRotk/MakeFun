@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">MakeFun</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--要闻-->
+    <array name="News">
+        <item>每周专栏</item>
+        <item>今日新闻</item>
+        <item>歪弟日报</item>
+        <item>视频分享</item>
+    </array>
+
+    <!--图库-->
+    <array name="TuKu">
+        <item>吐槽囧图</item>
+        <item>搞笑GIF</item>
+        <item>美女图片</item>
+    </array>
+
+    <!--Setting-->
+    <string name="SettingTitle">设置</string>
+    <!--设置-->
+    <string name="AutomaticPlay">WIFI自动播放</string>
+    <string name="ClearCash">清除缓存</string>
+    <!--互动-->
+    <string name="RecommendFriends">推荐给好友</string>
+    <string name="HighOpinion">赏个好评</string>
+    <string name="FeedBack">意见反馈</string>
+    <!--关于我们-->
+    <string name="AboutUs">关于我们</string>
+    <string name="Donate">捐助热线</string>
+
+
+    <!--Sliding Menu-->
+    <string name="YaoWen">要闻</string>
+    <string name="TuKu">图库</string>
+    <string name="CePing">测评</string>
+    <string name="Setting">设置</string>
+
+</resources>

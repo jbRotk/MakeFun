@@ -1,0 +1,31 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--通常控件的尺寸-->
+    <dimen name="Topbar_hight">50dp</dimen>
+    <dimen name="Slide_item_high">50dp</dimen>
+
+    <!--图标尺寸-->
+    <dimen name="tubiao_Size">40dp</dimen>
+
+    <!--字体尺寸-->
+    <dimen name="UsuallySize">16dp</dimen>
+    <dimen name="SmallerSize">10dp</dimen>
+    <dimen name="LargerSize">20dp</dimen>
+    <dimen name="LargeSize">10dp</dimen>
+
+    <!--SlideMenu-->
+    <dimen name="Slide_item_Size">14dp</dimen>
+    <dimen name="Slide_icon_text_distance">30dp</dimen>
+
+    <!--Setting_Size-->
+    <dimen name="Setting_top_back_size">20dp</dimen>
+    <dimen name="Setting_item_text_size">14dp</dimen>
+
+    <dimen name="Setting_corner_radius">8sp</dimen>
+    <dimen name="Setting_line_width">0.1dp</dimen>
+    <dimen name="Setting_item_high">60dp</dimen>
+    <dimen name="Setting_item_next_high">20dp</dimen>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e51c23</color>
+    <color name="colorPrimaryDark">#e51c23</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--button_selector-->
+    <color name="button_selector">#969696</color>
+    <color name="button_unselector">#ffffff</color>
+
+    <!--textcolor-->
+    <color name="TextColor">#ffffff</color>
+    <color name="Slide_item_textColor">#000000</color>
+
+    <!--slidecolor-->
+    <color name="Slide_item_clicked">#cac7c7</color>
+    <color name="Slide_item_noclick">#ffffff</color>
+
+    <!--setting-->
+    <color name="Setting_line_color">#969696</color>
+    <color name="Setting_cornor_btn_backg">#ffffff</color>
+    <color name="Setting_item_text_color">#000000</color>
+</resources>

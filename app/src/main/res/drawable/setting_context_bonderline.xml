@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="8sp"/>
+    <solid android:color="@color/Setting_cornor_btn_backg"/>
+    <stroke android:color="@color/Setting_line_color" android:width="@dimen/Setting_line_width"
+        />
+    <padding android:bottom="@dimen/Setting_line_width" android:left="@dimen/Setting_line_width"
+         android:right="@dimen/Setting_line_width" android:top="@dimen/Setting_line_width"/>
+</shape>
