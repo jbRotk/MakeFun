@@ -28,4 +28,9 @@
     <dimen name="Setting_item_high">60dp</dimen>
     <dimen name="Setting_item_next_high">20dp</dimen>
 
+    <!--图库-->
+    <dimen name="Recycler_item_line_width">8dp</dimen>
+    <dimen name="Tuku_context_textsize">12dp</dimen>
+    <dimen name="Tuku_time_textsize">10dp</dimen>
+
 </resources>

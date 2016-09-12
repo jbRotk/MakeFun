@@ -1,38 +1,30 @@
 package com.example.administrator.makefun.view.activity;
 
-import android.content.Intent;
-import android.content.res.Resources;
-import android.graphics.Color;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.administrator.makefun.R;
-import com.example.administrator.makefun.utils.ViewUtils;
+import com.example.administrator.makefun.utils.ScreenUtils;
 import com.example.administrator.makefun.view.Adapter.Main_tab_Adapter;
 import com.example.administrator.makefun.view.fragment.TodayNews;
+import com.example.administrator.makefun.view.fragment.TuCaoPic;
 import com.example.administrator.makefun.view.fragment.VideoRecommendation;
 import com.example.administrator.makefun.view.fragment.WaidiReport;
 import com.example.administrator.makefun.view.fragment.WeekColum;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
 import java.util.ArrayList;
-import java.util.zip.Inflater;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-import static android.support.design.widget.TabLayout.*;
+import static android.support.design.widget.TabLayout.MODE_FIXED;
+import static android.support.design.widget.TabLayout.OnClickListener;
 
 public class MainActivity extends BaseActivity implements OnClickListener{
     /*控件*/
@@ -85,7 +77,10 @@ public class MainActivity extends BaseActivity implements OnClickListener{
         todayNews = new TodayNews();
         waidiReport = new WaidiReport();
         videoRecommendation = new VideoRecommendation();
-        fragments.add(weekColum);
+
+        TuCaoPic tuCaoPic = new TuCaoPic();
+        fragments.add(tuCaoPic);
+        //fragments.add(weekColum);
         fragments.add(todayNews);
         fragments.add(waidiReport);
         fragments.add(videoRecommendation);
@@ -125,7 +120,7 @@ public class MainActivity extends BaseActivity implements OnClickListener{
         slidingMenu.setShadowWidth(50);
         //设置偏离距离
        // slidingMenu.setBehindOffsetRes(R.dimen.LargerSize);
-        slidingMenu.setBehindWidth(800);
+        slidingMenu.setBehindWidth(ScreenUtils.getInstance(MainActivity.this).getWidth()*2/3);
         //全屏模式，全屏滑动都可打开
         slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);
 

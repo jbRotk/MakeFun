@@ -20,6 +20,8 @@
         <item>美女图片</item>
     </array>
 
+
+
     <!--Setting-->
     <string name="SettingTitle">设置</string>
     <!--设置-->
@@ -32,6 +34,8 @@
     <!--关于我们-->
     <string name="AboutUs">关于我们</string>
     <string name="Donate">捐助热线</string>
+
+
 
 
     <!--Sliding Menu-->
